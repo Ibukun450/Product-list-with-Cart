@@ -40,16 +40,16 @@ body {
     font-weight: 200;
 }
 
-.cart-list-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
+#cart-list-img {
+    margin-top: 20px;
+    text-align: center;
+}
+#cart-list-img p {
+    font-weight: 500;
 }
 
-.cart-list-img p {
-    font-weight: 500;
+#total-price {
+    margin-top: 50px;
 }
 
 .btn {

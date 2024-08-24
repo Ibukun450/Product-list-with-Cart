@@ -119,3 +119,4 @@ products.forEach((product, index) => {
 
     productContainer.appendChild(productCard);
 });
+                            
