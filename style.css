@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(20, 50%, 98%);
+}
+
+.mart-div {
+    display: flex;
+    justify-content: center;
+    font-family: "Red Hat Text", sans-serif;
+    height: auto;
+    margin: 50px;
+}
+
+.home-div {
+    width: 70%;
+    height: 84vh;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.home-div h1 {
+   color: hsl(14, 65%, 9%);
+   padding-bottom: 15px;
+}
+
+.cart-div {
+    background-color: white;
+    border-radius: 10px;
+    width:30%;
+    height: 44vh;
+    padding: 20px;
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.cart-list-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.cart-list-img p {
+    font-weight: 500;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    color: hsl(14, 65%, 9%);
+}
+
+.cart-div h2 {
+    color: hsl(14, 86%, 42%);
+}
+
+.prod-cargo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.prod-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prod-image .prod-item-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prod-image .prod-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 70%;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid red;
+    position: relative;
+    bottom: 20px;
+    font-size: 12px;
+    font-weight: 500px;
+}
+
+.prod-image .prod-info img {
+    margin-right: 5px;
+    width: 15px;
+}
+
+.prod-items .item {
+    font-size: 11px;
+    color: hsl(7, 20%, 60%);
+    margin-bottom: 7px;
+}
+
+.prod-items h4 {
+    margin-bottom: 7px;
+}
+
+.prod-items .price {
+    font-size: 15px;
+    color: red;
+}
+
+  @media (max-width: 830px) {
+    .prod-cargo {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .prod-cargo {
+      grid-template-columns: 1fr;
+    }
+
+    .mart-div {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .home-div {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .cart-div {
+        width: 100%;
+    }
+
+    .prod-items {
+        width: 100%;
+        height: auto;
+    }
+  }
