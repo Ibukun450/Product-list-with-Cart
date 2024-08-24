@@ -69,7 +69,6 @@ function addToCart(productIndex) {
     }
 
     updateCartUI();
-    
 }
 
 // Function to remove an item from the cart
